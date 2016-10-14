@@ -22,12 +22,13 @@
 #define SG_margin_X (SG_screenWidth - SG_alertView_width) * 0.5
 #define SG_lineColor [UIColor colorWithRed:200 / 255.0 green:200 / 255.0 blue:200 / 255.0 alpha:1.0]
 @interface SGAlertView ()
+
 /** 遮盖 */
 @property (nonatomic, strong) UIButton *coverView;
 /** 背景View */
 @property (nonatomic, strong) UIView *bg_view;
 
-/** 信息提示文字 */
+/** 标题提示文字 */
 @property (nonatomic, copy) NSString *messageTitle;
 /** 内容提示文字 */
 @property (nonatomic, copy) NSString *contentTitle;
@@ -56,6 +57,7 @@ static CGFloat const message_text_fond = 17;
 static CGFloat const content_text_fond = 14;
 
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType {
+    
     if (self = [super init]) {
         self.frame = [UIScreen mainScreen].bounds;
         self.backgroundColor = [UIColor clearColor];
@@ -70,10 +72,12 @@ static CGFloat const content_text_fond = 14;
 }
 
 + (instancetype)alertViewWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType{
+    
     return [[self alloc] initWithTitle:title delegate:delegate contentTitle:contentTitle alertViewBottomViewType:alertViewBottomViewType];
 }
 
 - (void)show {
+    
     if (self.superview != nil) return;
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     [keyWindow addSubview:self];
