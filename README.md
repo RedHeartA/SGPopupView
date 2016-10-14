@@ -88,11 +88,17 @@
 ```
 
 * 对象调用show方法, 展示SGAlertView
-
+ 
+ * 属性设置
+ 
  * alert.sure_btnTitle = @"测试";
+ 
  * alert.left_btnTitle = @"可以";
+ 
  * alert.sure_btnTitleColor = [UIColor purpleColor];
+ 
  * alert.left_btnTitleColor = [UIColor redColor];
+ 
  * 遵循SGAlertViewDelegate协议的delegate_SG方法
 
 ```Objective-C
