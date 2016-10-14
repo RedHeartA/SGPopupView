@@ -91,13 +91,13 @@
  
  * 属性设置
  
- * alert.sure_btnTitle = @"测试";
+ * alert.sure_btnTitle = @"测试"; // 设置确定(right)按钮标题 (默认为确定)
  
- * alert.left_btnTitle = @"可以";
+ * alert.left_btnTitle = @"可以"; // 设置 left 按钮标题 (默认为取消)
  
- * alert.sure_btnTitleColor = [UIColor purpleColor];
+ * alert.sure_btnTitleColor = [UIColor purpleColor]; // 设置确定(right)按钮标题字体颜色 (默认为黑色)
  
- * alert.left_btnTitleColor = [UIColor redColor];
+ * alert.left_btnTitleColor = [UIColor redColor]; // 设置 left 按钮标题字体颜色 (默认为黑色)
  
  * 遵循SGAlertViewDelegate协议的delegate_SG方法
 
