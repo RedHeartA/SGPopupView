@@ -16,7 +16,7 @@
 
 * `自定义 UIActionSheet (仿微信、微博)`<br>
 
-* `自定义 UIAlertView (仿美团外卖)`<br>
+* `自定义 UIAlertView (仿腾讯视频、美团外卖)`<br>
 
 * `对 UIPickerView 的封装`<br>
 
