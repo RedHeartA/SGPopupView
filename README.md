@@ -165,6 +165,7 @@
 
 * 2016. 10. 12 --> 第一次提交版本
 * 2016. 10. 13 --> 新增 alertView 按钮属性
+* 2016. 10. 17 --> 补充 alertView 的 SGAlertViewBottomViewTypeOne 类型的点击事件
 
 
 ## Concluding remarks
