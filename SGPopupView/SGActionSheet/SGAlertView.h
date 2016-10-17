@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
 
 @protocol SGAlertViewDelegate <NSObject>
 
-/** right 按钮的点击事件(点击事件针对 SGAlertViewBottomViewTypeTwo 类型起作用) */
+/** right 按钮的点击事件(SGAlertViewBottomViewTypeOne 类型的确定按钮；SGAlertViewBottomViewTypeTwo 类型是right) */
 - (void)didSelectedRightButtonClick;
 /** left 按钮的点击事件(点击事件针对 SGAlertViewBottomViewTypeTwo 类型起作用) */
 - (void)didSelectedLeftButtonClick;

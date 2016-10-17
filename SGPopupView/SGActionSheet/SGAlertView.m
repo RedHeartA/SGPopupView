@@ -209,7 +209,7 @@ static CGFloat const content_text_fond = 14;
         [_button setTitle:@"确定" forState:(UIControlStateNormal)];
         [_button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
         _button.titleLabel.font = [UIFont systemFontOfSize:16];
-        [_button addTarget:self action:@selector(dismiss) forControlEvents:(UIControlEventTouchUpInside)];
+        [_button addTarget:self action:@selector(rightButtonClick) forControlEvents:(UIControlEventTouchUpInside)];
         [self.bottomViewOne addSubview:_button];
 
         // 背景View
