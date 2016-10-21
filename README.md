@@ -1,7 +1,7 @@
 
 ## 前沿
 
-* 项目中有时需要自定义 UIActionSheet 和 UIAlertView 来满足 app 界面的美观；以及购物类的 app 会遇到 UIPickerView 还有 UIDatePicker
+* 项目中有时需要自定义 UIActionSheet 和 UIAlertView 来满足 app 界面的美观；以及购物类的 app 时常会遇到 UIPickerView、UIDatePicker
 
 * 这里的 SGActionSheet 采取的是微信、微博界面的布局样式,  SGAlertView 采取的是美团外卖的布局样式
 
