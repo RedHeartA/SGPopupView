@@ -49,8 +49,8 @@
 /** Message与BGView之间的间距(X) */
 static CGFloat const margin_X = 20;
 
-/** Message与BGView之间的间距(Y) */
-static CGFloat const margin_Y = 15;
+/** Message与BGView之间的间距(Y)(想要调整提示标题的宽度可以在这里操作，目前调整的宽度为微信模式) */
+static CGFloat const margin_Y = 20;
 
 /** 取消按钮到other按钮之间的间距 */
 static CGFloat const margin_cancelButton_to_otherButton = 5;
