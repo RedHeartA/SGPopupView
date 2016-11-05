@@ -41,9 +41,7 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.backgroundColor = [UIColor clearColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
     cell.textLabel.text = self.title_arr[indexPath.row];
-    
     return cell;
 }
 
@@ -68,7 +66,7 @@
         sheet.cancelButtonTitleFont = [UIFont systemFontOfSize:20];
         [sheet show];
     } else if (indexPath.row == 4) {
-        SGAlertView *alert = [[SGAlertView alloc] initWithTitle:@"温馨提示 ! !" delegate:nil contentTitle:@"代码不断更新、优化中, 请移步GitHub下载最新Demo" alertViewBottomViewType:(SGAlertViewBottomViewTypeOne)];
+        SGAlertView *alert = [[SGAlertView alloc] initWithTitle:@"温馨提示 ! !" delegate:self contentTitle:@"代码不断更新、优化中, 请移步GitHub下载最新Demo" alertViewBottomViewType:(SGAlertViewBottomViewTypeOne)];
 //        alert.sure_btnTitle = @"测试";
         alert.sure_btnTitleColor = [UIColor redColor];
         [alert show];

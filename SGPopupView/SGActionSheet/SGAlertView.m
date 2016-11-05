@@ -21,8 +21,8 @@
 #define SG_alertView_width 280
 #define SG_margin_X (SG_screenWidth - SG_alertView_width) * 0.5
 #define SG_lineColor [UIColor colorWithRed:200 / 255.0 green:200 / 255.0 blue:200 / 255.0 alpha:1.0]
-@interface SGAlertView ()
 
+@interface SGAlertView ()
 /** 遮盖 */
 @property (nonatomic, strong) UIButton *coverView;
 /** 背景View */
