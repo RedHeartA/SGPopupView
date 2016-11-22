@@ -38,19 +38,19 @@
 
   * 导入#import "SGActionSheet.h"头文件
 
- * 对象方法创建
+* 对象方法创建
 ```Objective-C
  - (instancetype)initWithFrameWithTitle:(NSString *)title delegate:(id<SGActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitleArray:(NSArray *)otherButtonTitleArray 
 ```
 
-  * 类方法创建
+ * 类方法创建
 ```Objective-C
  + (instancetype)actionSheetWithTitle:(NSString *)title delegate:(id<SGActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitleArray:(NSArray *)otherButtonTitleArray
 ```
 
 * 对象调用show方法, 展示SGActionSheet
 
-  * 属性设置
+* 属性设置
 ```Objective-C
  sheet.messageTextColor = [UIColor redColor]; // 设置提示信息文字颜色 （默认为黑色）
  
@@ -78,19 +78,19 @@
 
   * 导入#import "SGAlertView.h"头文件
 
- * 对象方法创建
+* 对象方法创建
 ```Objective-C
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType;
 ```
 
-  * 类方法创建
+ * 类方法创建
 ```Objective-C
 + (instancetype)alertViewWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType;
 ```
 
 * 对象调用show方法, 展示SGAlertView
  
- * 属性设置
+* 属性设置
 ```Objective-C
  alert.sure_btnTitle = @"测试"; // 设置确定(right)按钮标题 (默认为确定)
  
