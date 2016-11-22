@@ -32,11 +32,11 @@
 
 ### * `自定义的UIActionSheet`<br>
 
-* SGActionSheet使用(一句代码创建, 一句代码调用)：
+* SGActionSheet 使用(一句代码创建, 一句代码调用)：
 
-  * 将项目中SGActionSheet文件夹拖入工程
+  * 将项目中 SGActionSheet 文件夹拖入工程
 
-  * 导入#import "SGActionSheet.h"头文件
+  * 导入 #import "SGActionSheet.h" 头文件
 
 * 对象方法创建
 ```Objective-C
@@ -48,7 +48,7 @@
  + (instancetype)actionSheetWithTitle:(NSString *)title delegate:(id<SGActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitleArray:(NSArray *)otherButtonTitleArray
 ```
 
-* 对象调用show方法, 展示SGActionSheet
+* 对象调用 show 方法, 展示 SGActionSheet
 
 * 属性设置
 ```Objective-C
@@ -65,18 +65,18 @@
  sheet.cancelButtonTitleFont = [UIFont systemFontOfSize:20];  // 设置取消按钮文字大小 （默认为17）
 ```
 
-   * 遵循SGActionSheetDelegate协议的delegate_SG方法
+   * 遵循 SGActionSheetDelegate 协议的 delegate_SG 方法
 ```Objective-C
  - (void)SGActionSheet:(SGActionSheet *)actionSheet didSelectRowAtIndexPath:(NSInteger)indexPath；
 ```
 
 ### * `自定义的UIAlertView`<br>
 
-* SGAlertView使用(一句代码创建, 一句代码调用)：
+* SGAlertView 使用(一句代码创建, 一句代码调用)：
 
-  * 将项目中SGActionSheet文件夹拖入工程
+  * 将项目中 SGActionSheet 文件夹拖入工程
 
-  * 导入#import "SGAlertView.h"头文件
+  * 导入 #import "SGAlertView.h" 头文件
 
 * 对象方法创建
 ```Objective-C
@@ -88,7 +88,7 @@
 + (instancetype)alertViewWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType;
 ```
 
-* 对象调用show方法, 展示SGAlertView
+* 对象调用 show 方法, 展示 SGAlertView
  
 * 属性设置
 ```Objective-C
@@ -101,7 +101,7 @@
  alert.left_btnTitleColor = [UIColor redColor]; // 设置 left 按钮标题字体颜色 (默认为黑色)
 ```
 
- * 遵循SGAlertViewDelegate协议的delegate_SG方法
+ * 遵循 SGAlertViewDelegate 协议的 delegate_SG 方法
 
 ```Objective-C
 - (void)didSelectedRightButtonClick;
@@ -118,9 +118,9 @@
 
 ### * `SGPickerView_DatePicker`<br>
 
-* 将项目中SGPickerView_DatePicker文件夹拖入工程
+* 将项目中 SGPickerView_DatePicker 文件夹拖入工程
 
-* 导入#import "SGPickerView.h 和 SGDatePicker.h"头文件
+* 导入 #import "SGPickerView.h 和 SGDatePicker.h" 头文件
 
 * 通过 alloc init 方法创建
 
