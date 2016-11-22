@@ -38,7 +38,7 @@
 
   * 导入#import "SGActionSheet.h"头文件
 
-  * 对象方法创建
+ * 对象方法创建
 ```Objective-C
  - (instancetype)initWithFrameWithTitle:(NSString *)title delegate:(id<SGActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitleArray:(NSArray *)otherButtonTitleArray 
 ```
@@ -78,7 +78,7 @@
 
   * 导入#import "SGAlertView.h"头文件
 
-  * 对象方法创建
+ * 对象方法创建
 ```Objective-C
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<SGAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(SGAlertViewBottomViewType)alertViewBottomViewType;
 ```
