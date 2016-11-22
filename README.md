@@ -51,18 +51,19 @@
 * 对象调用show方法, 展示SGActionSheet
 
   * 属性设置
-
-   * sheet.messageTextColor = [UIColor redColor]; // 设置提示信息文字颜色 （默认为黑色）
+```Objective-C
+ sheet.messageTextColor = [UIColor redColor]; // 设置提示信息文字颜色 （默认为黑色）
  
-   * sheet.otherTitleColor = [UIColor brownColor]; // 设置其他按钮文字颜色 （默认为黑色）
+ sheet.otherTitleColor = [UIColor brownColor]; // 设置其他按钮文字颜色 （默认为黑色）
 
-   * sheet.cancelButtonTitleColor = [UIColor redColor]; // 设置取消按钮文字颜色 （默认为黑色）
+ sheet.cancelButtonTitleColor = [UIColor redColor]; // 设置取消按钮文字颜色 （默认为黑色）
 
-   * sheet.messageTextFont = [UIFont systemFontOfSize:20];  // 设置提示信息文字大小 （默认为17）
+ sheet.messageTextFont = [UIFont systemFontOfSize:20];  // 设置提示信息文字大小 （默认为17）
 
-   * sheet.otherTitleFont = [UIFont systemFontOfSize:20];  // 设置其他按钮文字大小 （默认为17）
+ sheet.otherTitleFont = [UIFont systemFontOfSize:20];  // 设置其他按钮文字大小 （默认为17）
 
-   * sheet.cancelButtonTitleFont = [UIFont systemFontOfSize:20];  // 设置取消按钮文字大小 （默认为17）
+ sheet.cancelButtonTitleFont = [UIFont systemFontOfSize:20];  // 设置取消按钮文字大小 （默认为17）
+```
 
    * 遵循SGActionSheetDelegate协议的delegate_SG方法
 ```Objective-C
@@ -90,15 +91,16 @@
 * 对象调用show方法, 展示SGAlertView
  
  * 属性设置
+```Objective-C
+ alert.sure_btnTitle = @"测试"; // 设置确定(right)按钮标题 (默认为确定)
  
- * alert.sure_btnTitle = @"测试"; // 设置确定(right)按钮标题 (默认为确定)
+ alert.left_btnTitle = @"可以"; // 设置 left 按钮标题 (默认为取消)
  
- * alert.left_btnTitle = @"可以"; // 设置 left 按钮标题 (默认为取消)
+ alert.sure_btnTitleColor = [UIColor purpleColor]; // 设置确定(right)按钮标题字体颜色 (默认为黑色)
  
- * alert.sure_btnTitleColor = [UIColor purpleColor]; // 设置确定(right)按钮标题字体颜色 (默认为黑色)
- 
- * alert.left_btnTitleColor = [UIColor redColor]; // 设置 left 按钮标题字体颜色 (默认为黑色)
- 
+ alert.left_btnTitleColor = [UIColor redColor]; // 设置 left 按钮标题字体颜色 (默认为黑色)
+```
+
  * 遵循SGAlertViewDelegate协议的delegate_SG方法
 
 ```Objective-C
@@ -124,40 +126,40 @@
 
 ####   * 地区的选择
 ```Objective-C
-    SGPickerView *pickerView = [[SGPickerView alloc] init];
+SGPickerView *pickerView = [[SGPickerView alloc] init];
     
-    pickerView.pickerViewType = SGPickerViewTypeCenter; // 默认pickerViewType为SGPickerViewTypeBottom， 要想 pickerViewType 属性起到作用， 一定要在对象方法 show 之前设置
+pickerView.pickerViewType = SGPickerViewTypeCenter; // 默认pickerViewType为SGPickerViewTypeBottom， 要想 pickerViewType 属性起到作用， 一定要在对象方法 show 之前设置
     
-    [pickerView show];
+[pickerView show];
     
-    pickerView.locationMessage = ^(NSString *str){
+pickerView.locationMessage = ^(NSString *str){
     
-        self.title = str;
+    self.title = str;
     
-    };
+};
 ```
 
 ####   * 日期的选择
 ```Objective-C
-    SGDatePicker *datePicker = [[SGDatePicker alloc] init];
+SGDatePicker *datePicker = [[SGDatePicker alloc] init];
     
-    datePicker.datePickerType = SGPickerViewTypeCenter; // 默认datePickerType为SGPickerViewTypeBottom， 要想日期设置起到作用：一定设在 datePickerMode 属性之前设置
+datePicker.datePickerType = SGPickerViewTypeCenter; // 默认datePickerType为SGPickerViewTypeBottom， 要想日期设置起到作用：一定设在 datePickerMode 属性之前设置
 
-    datePicker.isBeforeTime = YES; 
+datePicker.isBeforeTime = YES; 
     
-    datePicker.datePickerMode = UIDatePickerModeDate; // 日期一定要设置
+datePicker.datePickerMode = UIDatePickerModeDate; // 日期一定要设置
     
-    __weak typeof(self) weakSelf = self;
+__weak typeof(self) weakSelf = self;
     
-    [datePicker didFinishSelectedDate:^(NSDate *selectedDate) {
+[datePicker didFinishSelectedDate:^(NSDate *selectedDate) {
     
-        weakSelf.title = [self dateStringWithDate:selectedDate DateFormat:@"yyyy年MM月dd日"]; // 日期设置
+    weakSelf.title = [self dateStringWithDate:selectedDate DateFormat:@"yyyy年MM月dd日"]; // 日期设置
         
-        weakSelf.title = [self dateStringWithDate:selectedDate DateFormat:@"MM月dd日 HH:mm"]; // 时间设置
+    weakSelf.title = [self dateStringWithDate:selectedDate DateFormat:@"MM月dd日 HH:mm"]; // 时间设置
 
-    }];
+}];
     
-    [datePicker show];
+[datePicker show];
 ```
 
 
